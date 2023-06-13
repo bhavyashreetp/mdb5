@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block title %}
+    <title>this is parent page</title>
+{% endblock %}
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+
+</head>
+<body>
+
+    <button type="button" class="btn btn-secondary">Secondary</button>
+
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+
+    <script src="{% static 'js/mbd.min.js'%}"></script>
+
+    <h1>this is parent html</h1>
+    <h1>mdb5 file</h1>
+    {% block boby_block %}
+    {% endblock%}
+
+</body>
+</html>
